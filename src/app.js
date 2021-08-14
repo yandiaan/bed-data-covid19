@@ -1,5 +1,7 @@
 import $ from "jquery";
-window.$ = $;
+
+const axios = require("axios");
+
 import "./styles/main.scss";
 import "popper.js";
 import "bootstrap/dist/js/bootstrap";
