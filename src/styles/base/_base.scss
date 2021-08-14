@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-primary;
+  background-color: black;
+  color: white;
+}
+h1 {
+  font-size: large;
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+}
