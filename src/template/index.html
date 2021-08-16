@@ -7,14 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Welcoming Page -->
-    <div id="welcome">
-      <div class="welcome">
-        <h1>Data Ketersediaan Kamar Rumah Sakit</h1>
-      </div>
-    </div>
-    <!-- End -->
-
     <!-- Navbar -->
     <header class="container">
       <nav-bar></nav-bar>
@@ -23,13 +15,41 @@
 
     <!-- End Header -->
 
-    <div class="container text-center">
-      <select name="province" id="province">
+    <div class="container">
+      <select
+        name="province"
+        id="province"
+        class="form-select form-select-lg mt-5 w-75 mx-auto"
+        aria-label=".form-select-lg example"
+      >
         <option selected disabled hidden>Pilih Provinsi</option>
       </select>
-      <select name="cities" id="cities" disabled>
+      <select
+        name="cities"
+        id="cities"
+        class="form-select form-select-lg mt-5 w-75 mx-auto"
+        disabled
+      >
         <option selected disabled hidden>Pilih Kabupaten/Kota</option>
       </select>
+      <select
+        name="cov"
+        id="cov"
+        class="form-select form-select-lg mt-5 w-75 mx-auto"
+        disabled
+      >
+        <option disabled selected hidden>COVID/non-COVID</option>
+        <option value="1">COVID</option>
+        <option value="2">non-COVID</option>
+      </select>
+      <div class="mx-auto text-center mt-4">
+        <button class="btn btn-outline-warning w-75 px-4 py-2" id="btnSearch">
+          Cari
+        </button>
+      </div>
+      <div class="card shadow-lg mt-5 p-5" id="dataContainer">
+        <h1 class="text-center">Data Rumah Sakit</h1>
+      </div>
     </div>
   </body>
 </html>

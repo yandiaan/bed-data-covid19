@@ -1,14 +1,1 @@
-#welcome {
-  position: absolute;
-  z-index: 2;
-  background-color: navy;
-  transition: 1s ease;
-  width: 100vw;
-  height: 100vh;
-}
 
-.disappear {
-  opacity: 0;
-  z-index: -99;
-  pointer-events: none;
-}
