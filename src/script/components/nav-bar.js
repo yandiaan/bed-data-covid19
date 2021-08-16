@@ -6,7 +6,7 @@ class Navbar extends HTMLElement {
   render() {
     this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href=""><img src="src/assets/logo.png">Data Rumah Sakit</a>
+      <a class="navbar-brand" href=""><img src="../src/assets/logo.png">Data Rumah Sakit</a>
       <button
         class="navbar-toggler"
         type="button"
