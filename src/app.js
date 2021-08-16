@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 const axios = require("axios");
 
 import "./styles/main.scss";

@@ -26,11 +26,6 @@ module.exports = {
       filename: "about.html",
     }),
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-    }),
-    new webpack.ProvidePlugin({
       axios: "axios",
     }),
   ],
