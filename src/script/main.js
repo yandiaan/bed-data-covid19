@@ -1,4 +1,5 @@
-let url = "https://api.dazelpro.com/mobile-legends/hero";
+let url =
+  "https://rs-bed-covid-api.vercel.app/api/get-hospitals?provinceid=34prop&cityid=3404&type=1";
 
 // fetch(url, {
 //   method: "get",
@@ -12,4 +13,6 @@ let url = "https://api.dazelpro.com/mobile-legends/hero";
 //   .then((data) => console.log(data))
 //   .catch((error) => console.log(`error : ${error}`));
 
-axios.get(`${url}/9`).then((data) => console.log(data.data.hero));
+axios.get(`${url}`).then((data) => {
+  console.log(data);
+});
