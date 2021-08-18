@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 const webpack = require("webpack");
 
@@ -12,7 +13,7 @@ module.exports = {
     rules: [
       {
         test: /\.(s(a|c)ss)$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -42,6 +43,9 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "css/[name][contenthash].css",
     }),
   ],
 };
