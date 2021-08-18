@@ -14,6 +14,19 @@ module.exports = {
         test: /\.(s(a|c)ss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images",
+              publicPath: "images",
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -26,7 +39,9 @@ module.exports = {
       filename: "about.html",
     }),
     new webpack.ProvidePlugin({
-      axios: "axios",
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
     }),
   ],
 };
